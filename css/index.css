@@ -1,0 +1,61 @@
+@font-face {
+    font-family: Raleway;
+    src: url('../fonts/raleway-regular.ttf');
+}
+
+@font-face {
+    font-family: Rockwell;
+    src: url('../fonts/rockwell-std.otf');
+}
+
+body{
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    padding: 0.5rem;
+    height:4rem;
+    position: fixed;
+    z-index:2;
+    border: 1px solid black;
+    font-family: Raleway;
+}
+
+#logo-with-text{
+    position: relative;
+    display: inline;
+    margin-left: 1rem;
+}
+
+#header-links{
+    float: right;
+    margin-right: 1rem;
+    margin-top: 1.5rem;
+    font-family: Rockwell;
+    z-index: 3;
+}
+
+#header-links ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#header-links li{
+    display: inline;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+
+#header-links a{
+    text-decoration: none;
+}
+
+#container{
+}
+
+#download{
+    background-image: url('../images/background.jpg');
+    height: 700px;
+}
