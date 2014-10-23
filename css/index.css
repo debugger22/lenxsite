@@ -1,0 +1,181 @@
+@font-face {
+    font-family: Raleway;
+    src: url('../fonts/raleway-regular.ttf');
+}
+
+@font-face {
+    font-family: Rockwell;
+    src: url('../fonts/rockwell-std.otf');
+}
+
+@font-face {
+    font-family: Roboto Regular;
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: Roboto Thin;
+    src: url('../fonts/Roboto-Thin.ttf');
+}
+
+@font-face {
+    font-family: Roboto Condensed;
+    src: url('../fonts/Roboto-Condensed.ttf');
+}
+
+@font-face {
+    font-family: Roboto Bold;
+    src: url('../fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: Roboto Light;
+    src: url('../fonts/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: Roboto Slab;
+    src: url('../fonts/RobotoSlab-Regular.ttf');
+}
+
+body{
+    width: 100%;
+}
+
+header{
+    background: white;
+    width: 100%;
+    padding: 0.5rem;
+    height:70px;
+    position: fixed;
+    z-index:2;
+    font-family: Raleway;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+#logo-with-text{
+    position: relative;
+    display: inline;
+    margin-left: 1rem;
+}
+
+#header-links{
+    float: right;
+    margin-right: 1rem;
+    margin-top: 1.8rem;
+    font-family: Rockwell;
+    z-index: 10;
+}
+
+#header-links ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#header-links li{
+    display: inline;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+
+#header-links a{
+    text-decoration: none;
+    color:515151;
+}
+
+@media screen and (max-width:640px){
+    #header-links {
+        display: none;
+    }
+}
+
+#container{
+    padding-top: 70px;
+    position: relative;
+}
+
+#download{
+    position: relative;
+    background-image: url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    color:white;
+}
+
+.download-icon{
+    position: absolute;
+    width: 15%;
+    top:20rem;
+    left:42.5%;
+}
+
+#concept{
+    position: relative;
+    background: #eeeeee;
+    height: 700px;
+    color:#515151;
+}
+
+#team{
+    position: relative;
+    background: #e0e0e0;
+    height: 600px;
+    color:#515151;
+}
+
+#portraits{
+    width: 100%;
+    padding 10px;
+    text-align: center;
+    height:300px;
+    position: absolute;
+    top:15rem;
+}
+
+.dev-name{
+    font-family: Roboto Condensed;
+    font-size:1.2rem;
+    margin-top: 10px;
+    color: black;
+}
+
+.dev-role{
+    font-family: Roboto Thin;
+    margin-top: 5px;
+    color: black;
+}
+
+
+#contact{
+    position: relative;
+    background: #43d0ba;
+    height: 600px;
+    color:white;
+}
+
+#contacts{
+    position: absolute;
+    bottom:0;
+    right:5rem;
+}
+
+.contact-us-head{
+    font-family: Roboto Bold;
+    font-size: 4rem;
+    position: absolute;
+    top:7rem;
+    left:5rem;
+}
+
+.contact-us-subhead{
+    font-family: Roboto Light;
+    font-size: 3rem;
+    position: absolute;
+    top:14rem;
+    left:5rem;
+    width:40%;
+    height:300px;
+}
