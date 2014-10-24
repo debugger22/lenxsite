@@ -43,7 +43,7 @@ $(document).ready(function() {
     function changeSlide() {
         currSlide++;
         if (currSlide == 6) currSlide = 0;
-        $("#slideshow-text").fadeTo(1000, 0.10, function() {
+        $("#slideshow-text").fadeTo(1000, 0, function() {
             $('#slideshow-text').html(slideshow_text[currSlide]);
         }).fadeTo(500, 1);
 
