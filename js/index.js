@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+    /*
     var s = skrollr.init();
     skrollr.menu.init(s, {
         //skrollr will smoothly animate to the new position using `animateTo`.
@@ -14,6 +15,7 @@ $(document).ready(function() {
             return $(link).data('menu-top');
         }
     });
+*/
 
 
     var slideshow_text = [
@@ -52,4 +54,4 @@ $(document).ready(function() {
 
     setInterval(changeSlide, 7000);
 
-});
+});*/
