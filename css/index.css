@@ -137,6 +137,32 @@ header{
     color:#515151;
 }
 
+#text-and-slideshow{
+    width:100%;
+    position: absolute;
+    left:0;
+    top:10rem;
+    padding:20px;
+    height:500px;
+}
+
+#slideshow-text{
+    width:35%;
+    float:left;
+    margin-top:100px;
+    margin-left:5%;
+    height:280px;
+    font-family: Roboto Condensed;
+    font-size: 2rem;
+}
+
+#slideshow{
+    width:55%;
+    float:right;
+    height:380px;
+}
+
+
 #team{
     position: relative;
     background: #e0e0e0;
