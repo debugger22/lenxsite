@@ -152,7 +152,7 @@ header{
     margin-top:100px;
     margin-left:5%;
     height:280px;
-    font-family: Roboto Condensed;
+    font-family: Roboto Thin;
     font-size: 2rem;
 }
 
@@ -160,6 +160,22 @@ header{
     width:55%;
     float:right;
     height:380px;
+}
+
+@media screen and (max-width:850px){
+
+    #concept{
+        height:400px;
+    }
+
+    #slideshow{
+        display: none;
+    }
+
+    #slideshow-text{
+        width: 90%;
+        margin-top: 10px;
+    }
 }
 
 
@@ -193,8 +209,17 @@ header{
 }
 
 @media screen and (max-width:850px){
+
+    #team{
+        height:1290px;
+    }
+
+    #portraits{
+        top:10rem;
+    }
+
     #portraits img{
-        display: none;
+        margin-top: 20px;
     }
 
     #mobile-social-icons{
@@ -202,7 +227,6 @@ header{
     }
 
 }
-
 
 
 #contact{
@@ -220,7 +244,7 @@ header{
 
 .contact-us-head{
     font-family: Roboto Bold;
-    font-size: 4rem;
+    font-size: 3.5rem;
     position: absolute;
     top:7rem;
     left:5rem;
@@ -245,9 +269,8 @@ header{
 #mobile-social-icons{
     position: absolute;
     text-align: center;
-    bottom: 4rem;
-    width:30%;
-    left:35%;
+    bottom: 3rem;
+    width: 100%;
     display: none;
 }
 
@@ -256,8 +279,20 @@ header{
         display: none;
     }
 
+    .contact-us-head{
+        font-size:2.5rem;
+        width:80%;
+        left:1rem;
+    }
+
+    .contact-us-subhead{
+        width:80%;
+        left:1rem;
+    }
+
     #mobile-social-icons{
         display: block;
+        bottom: 1rem
     }
 
 }

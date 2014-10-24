@@ -19,12 +19,12 @@ $(document).ready(function() {
 
 
     var slideshow_text = [
-        'Click on zoom button to get the zoom bar and drag it to change the zoom level.',
-        'Timer button allows you to set the exposure time. You can also enable a delayed shot.',
-        'Rotate the exposure dial to change the exposure of the camera.',
-        'Click on the preview button at the bottom to get an approximate preview of the shot before you even take it.',
-        'Press the shoot button on the right to start the long exposure shot.',
-        'You can always pause a shoot in progress and resume it later.'
+        'click on zoom button to get the zoom bar and drag it to change the zoom level',
+        'timer button allows you to set the exposure time. You can also enable a delayed shot',
+        'rotate the exposure dial to change the exposure of the camera',
+        'click on the preview button at the bottom to get an approximate preview of the shot before you even take it',
+        'press the shoot button on the right to start the long exposure shot',
+        'you can always pause a shoot in progress and resume it later'
     ];
 
     var slideshow_images = [
@@ -52,6 +52,6 @@ $(document).ready(function() {
         }).fadeTo(500, 1);
     }
 
-    setInterval(changeSlide, 7000);
+    setInterval(changeSlide, 6000); // Change slide after 6 seconds
 
-});*/
+});
