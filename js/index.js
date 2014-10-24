@@ -47,7 +47,7 @@ $(document).ready(function() {
             $('#slideshow-text').html(slideshow_text[currSlide]);
         }).fadeTo(500, 1);
 
-        $("#slideshow-image").fadeTo(1000, 0.10, function() {
+        $("#slideshow-image").fadeTo(1000, 0, function() {
             $("#slideshow-image").attr("src", slideshow_images[currSlide]);
         }).fadeTo(500, 1);
     }
