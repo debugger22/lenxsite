@@ -46,7 +46,7 @@ header{
     background: white;
     width: 100%;
     padding: 0.5rem;
-    height:70px;
+    height:55px;
     position: fixed;
     z-index:2;
     font-family: Raleway;
@@ -63,7 +63,7 @@ header{
 #header-links{
     float: right;
     margin-right: 1rem;
-    margin-top: 1.8rem;
+    margin-top: 1.5rem;
     font-family: Rockwell;
     z-index: 10;
 }
@@ -85,7 +85,7 @@ header{
     color:#515151;
 }
 
-@media screen and (max-width:640px){
+@media screen and (max-width:750px){
     #header-links {
         display: none;
     }
@@ -174,7 +174,7 @@ header{
     }
 
     #slideshow-text{
-        width: 90%;
+        width: 80%;
         margin-top: 10px;
     }
 }
