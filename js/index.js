@@ -37,8 +37,10 @@ $(document).ready(function() {
     ];
 
     var currSlide = 0;
+    var backgroundRunnerId = null;
     $('#slideshow-text').html(slideshow_text[currSlide]);
     $("#slideshow-image").attr("src", slideshow_images[currSlide]);
+    $("#bubble0").addClass('active-bubble');
 
     function changeSlide() {
         currSlide++;
@@ -49,9 +51,25 @@ $(document).ready(function() {
 
         $("#slideshow-image").fadeTo(1000, 0, function() {
             $("#slideshow-image").attr("src", slideshow_images[currSlide]);
+            for (var i = 0; i < 6; i++) {
+                $("#bubble" + i).removeClass('active-bubble');
+            }
+            $("#bubble" + currSlide).addClass('active-bubble');
         }).fadeTo(500, 1);
     }
 
-    setInterval(changeSlide, 6000); // Change slide after 6 seconds
+    $('.inactive-bubble').click(function() {
+        currSlide = parseInt($(this).attr('slide-index'));
+        $('#slideshow-text').html(slideshow_text[currSlide]);
+        $("#slideshow-image").attr("src", slideshow_images[currSlide]);
+        for (var i = 0; i < 6; i++) {
+            $("#bubble" + i).removeClass('active-bubble');
+        }
+        $("#bubble" + currSlide).addClass('active-bubble');
+        clearInterval(backgroundRunnerId);
+        backgroundRunnerId = setInterval(changeSlide, 6000); // Change slide after 6 seconds
+    });
+
+    backgroundRunnerId = setInterval(changeSlide, 6000); // Change slide after 6 seconds
 
 });
