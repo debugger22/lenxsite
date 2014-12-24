@@ -278,6 +278,7 @@ header{
 
 .contact-us-head{
     font-family: Roboto Bold;
+    text-shadow: rgb(0, 0, 0) 1px 1px 2px;
     font-size: 3.5rem;
     position: absolute;
     top:7rem;
